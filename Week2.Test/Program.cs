@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace Week2.Test
 {
@@ -6,7 +7,14 @@ namespace Week2.Test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ArrayList task_lista = new ArrayList();
+
+            int i = Supporto.Menu();
+            while (i != 0)
+            {
+                Supporto.AnalizzaScelta(i, ref task_lista);
+                i = Supporto.Menu();
+            }
         }
     }
 }
