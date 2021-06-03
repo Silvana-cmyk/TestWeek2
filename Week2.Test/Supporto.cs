@@ -71,7 +71,7 @@ namespace Week2.Test
 
                 Console.WriteLine("Inserisci data scadenza aaaa mm gg");
                 DateTime dt = Convert.ToDateTime(Console.ReadLine());
-                while(dt < DateTime.Now)
+                while(dt < DateTime.Now) //dt < di DateTime.Today
                 {
                     Console.WriteLine("Inserisci data posteriore a oggi");
                     dt = Convert.ToDateTime(Console.ReadLine());
